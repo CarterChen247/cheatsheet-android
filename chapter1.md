@@ -46,19 +46,18 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 Manifest
 
-    <!-- Google Map API v2使用到OpenGL第二版功能，確定使用者裝置支援 -->
-    <uses-feature
-    android:glEsVersion="0x00020000"
-    android:required="true" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 存取Google web services -->
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <!-- 透過3G或wifi定位 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- 使用GPS定位 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+```<uses-feature
+android:glEsVersion="0x00020000"
+android:required="true" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!-- 存取Google web services -->
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+<!-- 透過3G或wifi定位 -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<!-- 使用GPS定位 -->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> ```
 
     
     
