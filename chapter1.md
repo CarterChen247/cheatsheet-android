@@ -1,3 +1,12 @@
-# Using Google Maps API to show 
+# 使用Google Maps API來顯示地圖
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+<img src = "Screenshot_2015-07-02-16-53-43.jpg" / width = 30%, height = 30%>
+
+######↑在APP中顯示地圖###### 
+
+
+
+
+
+
+
