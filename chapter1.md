@@ -1,3 +1,3 @@
-# 使用Google Maps API來呈現地圖
+# Using Google Maps API to show 
 
 GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
