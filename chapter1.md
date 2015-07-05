@@ -14,6 +14,8 @@
     keytool -genkey -v -keystore yourkeyname.keystore -alias yourkeyname -keyalg RSA -keysize 2048 -validity 10000
     
     
+接著開始coding
+
 
 
     mapFragment = ((SupportMapFragment) getSupportFragmentManager()
