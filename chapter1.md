@@ -13,13 +13,18 @@
 
 ## 範例目錄
 
+1. 安裝並匯入Google Play services專案到工作區
+2. 為開發中的APP匯入Google Play services library
+3. AndroidManifest權限設定
+4. App UI與程式設定
+
 ## 範例說明
 
 其實要在APP上顯示地圖只要寫幾行layout，然後幾行程式就可以解決了
 
 但是為了要能妥善的顯示，我們必須要做一下設定
 
-### 安裝並匯入Google Play services library
+### 安裝並匯入Google Play services專案到工作區
 
 開啟Android SDK Manager
 
@@ -38,7 +43,11 @@ File -> Import -> Android -> Existing Android Code Into Workspace -> Next -> Bro
 ```bash
 C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 ```
-然後Finish
+點選Finish，匯入工作區
+
+### 為開發中的APP匯入Google Play services library
+
+已經匯入的Google Play services專案，已經是個library了，可以直接被App使用
 
 對正在開發中的APP專案點右鍵
 
@@ -48,7 +57,11 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 將剛剛匯入的Google Play service專案library - google-play-services_lib匯入
 
+即完成Google Play service的設定
+
 <img src = "/img/map_lib.png"   />
+
+### AndroidManifest權限設定
 
 接下來開啟AndroidManifest.xml，進行API key的驗證設定
 
@@ -88,9 +101,11 @@ API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
     android:required="true" />
 ```
 
-授權手機使用網路連線、GPS定位等設定(不設定就無法定位)
+授權手機使用網路連線、GPS定位等設定(不設定就無法定位喔!)
+
+### App UI與程式設定
     
-然後在activity_main.xml中加入MapFragment，用來呈現地圖
+在activity_main.xml中加入MapFragment，用來呈現地圖
 
 ```
 <fragment
@@ -106,4 +121,4 @@ API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
 GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 ```
 
-如此一來，地圖就簡單的被呈現了
+大功告成!可以開始Run看看App了。
