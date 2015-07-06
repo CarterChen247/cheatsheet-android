@@ -1,8 +1,28 @@
 申請Google Maps API
 
+##目標
+
+開啟Google Maps API
+
+##正文開始
+
+
 先連到[Google API Console](https://code.google.com/apis/console)(Google API 主控台)
 
+會先看到這個畫面
+
+
 <img src = "/img/map_api_console.png" / >
+
+
+選擇「Enable Google APIs for use in your apps」
+
+啟動你應用程式中的Google API
+
+
+<img src = "/img/map_start.jpg" width="60%" height="60%"/ >
+
+
 
 卡在SHA1
 
