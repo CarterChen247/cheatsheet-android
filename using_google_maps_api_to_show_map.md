@@ -32,7 +32,7 @@ Eclipse -> Window -> Android SDK Manager
 
 找到並安裝Google Play services
 
-<img src = "/img/map_service.png"   />
+><img src = "/img/map_service.png"   />
 
 安裝完以後，將Google Play services的專案匯入工作區
 
@@ -51,7 +51,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 對正在開發中的APP專案點右鍵
 
-<img src = "/img/map_right_click.png"   />
+><img src = "/img/map_right_click.png"   />
 
 選擇 Properties -> Android -> Library -> Add
 
@@ -59,7 +59,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 即完成Google Play service的設定
 
-<img src = "/img/map_lib.png"   />
+><img src = "/img/map_lib.png"   />
 
 ### AndroidManifest權限設定
 
