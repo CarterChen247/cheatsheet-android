@@ -116,6 +116,14 @@ SHA1: "00:50:88:7E:50:74:AA:29:0C:95:b7:AB:6E:9D:F3:3D:71:72:50:DA"
 
 ```
 
+另外一種比較簡單的方法，如果你用Eclipse
+
+Window -> Preferences -> Android -> Build 也是找得到哦
+
+<img src = "/img/map_eclipse.png" / >
+
+
+
 ###package name
 
 package name的取得就比較簡單了
