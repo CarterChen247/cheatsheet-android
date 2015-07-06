@@ -21,7 +21,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 Manifest
 
-```
+'''Java
 <uses-feature
 android:glEsVersion="0x00020000"
 android:required="true" />
@@ -34,7 +34,7 @@ android:required="true" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <!-- 使用GPS定位 -->
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-```
+'''
 
     
     
