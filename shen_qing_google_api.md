@@ -2,7 +2,7 @@
 
 先連到[Google API Console](https://code.google.com/apis/console)(Google API 主控台)
 
-
+<img src = "/img/map_api_console.png" / width = 100%, height = 100% align = "middle">
 
 卡在SHA1
 
