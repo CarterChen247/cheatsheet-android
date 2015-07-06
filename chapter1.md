@@ -58,7 +58,8 @@ android:required="true" />
 <!-- 透過3G或wifi定位 -->
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <!-- 使用GPS定位 -->
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />```
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+```
 
     
     
@@ -71,7 +72,8 @@ android:name="com.google.android.maps.v2.API_KEY"
 android:value="AIzaSyBSG1gZOJpjN5n8ALMzShsyMbz3AGv65ug" />
 <meta-data
 android:name="com.google.android.gms.version"
-android:value="@integer/google_play_services_version" />```
+android:value="@integer/google_play_services_version" />
+```
     
             
 activity_main.xml
@@ -94,7 +96,9 @@ class="com.google.android.gms.maps.MapFragment" />
 
 MainActivity.java
 
-```GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();```
+```
+GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+```
 
 
 trouble shooting
@@ -103,20 +107,23 @@ trouble shooting
 
 通常debug.keystore會存在這個位址
 
-    C:\Users\User\.android\debug.keystore
+```
+C:\Users\User\.android\debug.keystore
+```
 
 131332
     
-    keytool -genkey -v -keystore yourkeyname.keystore -alias yourkeyname -keyalg RSA -keysize 2048 -validity 10000
-    
+```
+keytool -genkey -v -keystore yourkeyname.keystore -alias yourkeyname -keyalg RSA -keysize 2048 -validity 10000
+```
     
 接著開始coding
 
-
-
-    mapFragment = ((SupportMapFragment) getSupportFragmentManager()
+```
+mapFragment = ((SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map_small));
 	map = mapFragment.getMap();
+```
 
 
 
