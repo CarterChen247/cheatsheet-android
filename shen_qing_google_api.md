@@ -1,10 +1,18 @@
-申請Google Maps API
+#申請Google Maps API以開發地圖應用程式
 
-##目標
+很多時候如果我們開發的APP中具有和顯示地點有關的功能
+
+便可以加入地圖的功能，方便使用者找尋地點
+
+Android中提供Google Map地圖支援，只是在使用之前要做一些小設定
+
+以下就來介紹如何進行設定!
+
+##範例目標
 
 開啟Google Maps API並獲得API key授權
 
-##正文開始
+##範例說明
 
 
 先連到[Google API Console](https://code.google.com/apis/console)(Google API 主控台)
