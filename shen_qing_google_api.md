@@ -112,7 +112,7 @@ keytool -list -v -keystore C:\Users\PC\.android\debug.keystore
 本範例的SHA1 fingerprint如下
 
 ```bash
-SHA1: 00:50:88:7E:50:74:AA:29:0C:95:b7:AB:6E:9D:F3:3D:71:72:50:DA
+SHA1: "00:50:88:7E:50:74:AA:29:0C:95:b7:AB:6E:9D:F3:3D:71:72:50:DA"
 
 ```
 
@@ -143,9 +143,11 @@ package name的取得就比較簡單了
 
 如此一來，便取得我們的API key
 
+```bash
+API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
+```
+
 <img src = "/img/map_api_key.png" / >
 
-```
-API key: AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk
-```
+
 
