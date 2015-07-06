@@ -15,20 +15,60 @@
 
 ## 範例說明
 
+其實要在APP上顯示地圖只要寫幾行layout，然後幾行程式就可以解決了
 
+但是為了要能妥善的顯示，我們必須要做一下設定
 
-需要service lib
+### 安裝並匯入Google Play services library
 
-Eclipse -> Window -> SDK Manager
+開啟Android SDK Manager
 
-下載 Google Play Services
+Eclipse -> Window -> Android SDK Manager
 
+找到並安裝Google Play services
+
+<img src = "/img/map_service.png"   />
+
+安裝完以後，將Google Play services的專案匯入工作區
+
+File -> Import -> Android -> Existing Android Code Into Workspace -> Next -> Browse
+
+找到Google Play services的專案位置
+
+```bash
 C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
+```
+然後Finish
 
+對正在開發中的APP專案點右鍵
 
-開啟 File --> Import --> Android --> Existing Android Code Into Workspace --> Next
+<img src = "/img/map_right_click.png"   />
 
-Manifest
+選擇 Properties -> Android -> Library -> Add
+
+將剛剛匯入的Google Play service專案library - google-play-services_lib匯入
+
+<img src = "/img/map_lib.png"   />
+
+接下來開啟AndroidManifest.xml，進行API key的驗證設定
+
+在application標籤中，加入
+
+```
+<meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="[你的Google API key]" />
+<meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version" />
+```
+我們依照章節「申請Google API」設定後，得到的API key為
+
+```bash
+API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
+```
+把它填到value屬性中
+接著在manifest標籤中的其它地方加入
 
 ```xml
 <uses-permission 
@@ -48,55 +88,22 @@ Manifest
     android:required="true" />
 ```
 
+授權手機使用網路連線、GPS定位等設定(不設定就無法定位)
     
-    
-    
-    
-Manifest application
-```
-<meta-data
-    android:name="com.google.android.maps.v2.API_KEY"
-    android:value="AIzaSyBSG1gZOJpjN5n8ALMzShsyMbz3AGv65ug" />
-<meta-data
-    android:name="com.google.android.gms.version"
-    android:value="@integer/google_play_services_version" />
-```
-    
-            
-activity_main.xml
+然後在activity_main.xml中加入MapFragment，用來呈現地圖
 
 ```
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<fragment
+    android:id="@+id/map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <fragment
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        class="com.google.android.gms.maps.MapFragment" />
-    
-</RelativeLayout>
+    class="com.google.android.gms.maps.MapFragment" />
 ```
 
-MainActivity.java
+在MainActivity.java中加入以下程式碼
 
 ```java
 GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 ```
 
-
-trouble shooting
-[2015-07-05 23:31:51 - google-play-services_lib] Unable to resolve target 'android-9'
-
-
-
-
-
-end
-
-
-
-
+如此一來，地圖就簡單的被呈現了
