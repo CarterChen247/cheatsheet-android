@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [申請Google API](apply_google_api_key.md)
-* [使用Google Maps API顯示地圖](using Google Maps API to show map.md)
+* [使用Google Maps API顯示地圖](using_google_maps_api_to_show_map.md/using_google_maps_api_to_show_mapmd.md)
 
