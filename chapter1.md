@@ -71,7 +71,7 @@ class="com.google.android.gms.maps.MapFragment" />
 
 MainActivity.java
 
-```
+```java
 GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 ```
 
@@ -94,7 +94,7 @@ keytool -genkey -v -keystore yourkeyname.keystore -alias yourkeyname -keyalg RSA
     
 接著開始coding
 
-```
+```java
 mapFragment = ((SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map_small));
 	map = mapFragment.getMap();
