@@ -29,7 +29,7 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 並新增一個專案
 
-<img src = "/img/map_start.jpg" />
+><img src = "/img/map_start.jpg" />
 
 
 因為是示範專案，所以專案名稱就填test(你可以填入你自己喜歡的名稱)
@@ -38,7 +38,7 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 
 
-<img src = "/img/map_enable.png" / >
+><img src = "/img/map_enable.png" / >
 
 
 選擇「Enable Google APIs for use in your apps」
@@ -46,13 +46,13 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 啟動你應用程式中的Google API
 
 
-<img src = "/img/map_android_apis.png" / >
+><img src = "/img/map_android_apis.png" / >
 
 啟動「Google Maps Android API」
 
 點選啟用，就完成API的啟用了
 
-<img src = "/img/map_go.png" / >
+><img src = "/img/map_go.png" / >
 
 接下來我們要讓我們開發的應用程式可以存取這個API
 
@@ -60,7 +60,7 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 所以點選「前往API主控台查看報表」進行API key的設定
 
-<img src = "/img/map_api_access.png" / >
+><img src = "/img/map_api_access.png" / >
 
 先在主控台左邊選取「API Access」管理API的存取
 
@@ -138,7 +138,7 @@ SHA1: "00:50:88:7E:50:74:AA:29:0C:95:b7:AB:6E:9D:F3:3D:71:72:50:DA"
 
 Window -> Preferences -> Android -> Build 也是找得到哦
 
-<img src = "/img/map_eclipse.png" / >
+><img src = "/img/map_eclipse.png" / >
 
 
 
@@ -150,7 +150,7 @@ package name的取得就比較簡單了
 
 在專案命名過程中即可獲得package name
 
-<img src = "/img/map_new_app.png" / >
+><img src = "/img/map_new_app.png" / >
 
 如果你是現有的專案，package name則在這個地方
 
@@ -173,7 +173,7 @@ package name的取得就比較簡單了
 API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
 ```
 
-<img src = "/img/map_api_key.png" / >
+><img src = "/img/map_api_key.png" / >
 
 
 
