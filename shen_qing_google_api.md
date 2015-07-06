@@ -2,7 +2,7 @@
 
 ##目標
 
-開啟Google Maps API
+開啟Google Maps API並獲得API key授權
 
 ##正文開始
 
@@ -101,38 +101,51 @@ C:\Users\PC\.android\debug.keystore
 keytool -list -v -keystore C:\Users\PC\.android\debug.keystore
 ```
 
+過程中若遇到詢問「金鑰儲存庫密碼」，直接按Enter跳過即可
+
+最後我們就拿到了我們SHA1 fingerprint
+
+<img src = "/img/map_sha1.png" / >
+
+記得先將得到的SHA1 fingerprint記起來，我們待會還會用到
+
+本範例的SHA1 fingerprint如下
+
+```bash
+SHA1: 00:50:88:7E:50:74:AA:29:0C:95:b7:AB:6E:9D:F3:3D:71:72:50:DA
+
+```
+
+###package name
+
+package name的取得就比較簡單了
+
+在Eclipse中File -> New -> Android Application Project 建立一個新的專案
+
+在專案命名過程中即可獲得package name
+
+<img src = "/img/map_new_app.png" / >
+
+如果你是現有的專案，package name則在這個地方
+
+<img src = "/img/map_package.png" / >
 
 
+取得授權
 
+回到Android key的設定視窗，依照它的指示輸入SHA1 fingerprint和package name
 
+```
+[SHA1 fingerprint];[package name]
+```
 
+<img src = "/img/map_insert.png" / >
 
+如此一來，便取得我們的API key
 
+<img src = "/img/map_api_key.png" / >
 
+```
+API key: AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk
+```
 
-
-
-卡在SHA1
-
-藥用keytool
-
-通常在Java資料夾
-C:\Program Files\Java\jre7\bin
-
-按windows + R 開啟執行 並輸入cmd 開啟命令列
-
-輸入keytool -list -v -keystore mykeystore
-
-可是keystore在哪裡呢?
-
-$ keytool -genkey -v -keystore [我的keystore]
--alias [keystore別名] -keyalg RSA -keysize 2048 -validity 10000
-
-
-C:\Program Files\Java\jre7\bin>keytool -list -v -keystore mykeystore(位址)
-
-SHA1
-EF:C1:79:76:6B:8F:BE:67:00:9F:37:DF:A7:86:C3:51:E3:DC:70:0B
-
-先記住
-AIzaSyATzzKFoAuLDTrMh55meeEHF6Wmx0Xd0cc
