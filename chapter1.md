@@ -1,8 +1,13 @@
 # 使用Google Maps API顯示地圖
 若你想開發的APP需要呈現與地點有關的資訊，可以使用Google Maps API來呈現。
 
-## 呈現結果
-<img src = "/img/map_result.jpg" / width = 30%, height = 30% align = "middle">
+## 範例目標
+
+<img src = "/img/map_result.jpg"  width = 30%, height = 30% />
+
+在APP上顯示地圖。
+
+
 
 ## 正文開始
 
