@@ -21,7 +21,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
 
 Manifest
 
-```java
+```xml
 <uses-feature
 android:glEsVersion="0x00020000"
 android:required="true" />
