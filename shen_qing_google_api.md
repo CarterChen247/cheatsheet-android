@@ -11,8 +11,11 @@
 
 會先看到這個畫面
 
+<img src = "/img/map_start.jpg" / >
 
-<img src = "/img/map_api_console.png" border = "1" / >
+
+
+<img src = "/img/map_api_console.png" / >
 
 
 選擇「Enable Google APIs for use in your apps」
@@ -20,7 +23,6 @@
 啟動你應用程式中的Google API
 
 
-<img src = "/img/map_start.jpg" width="60%" height="60%" border = "1"/ >
 
 
 
