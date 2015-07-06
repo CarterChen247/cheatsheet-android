@@ -28,7 +28,88 @@
 啟動你應用程式中的Google API
 
 
-<img src = "/img/map_apis.png" / >
+<img src = "/img/map_android_apis.png" / >
+
+啟動「Google Maps Android API」
+
+點選啟用，就完成API的啟用了
+
+<img src = "/img/map_go.png" / >
+
+接下來我們要讓我們開發的應用程式可以存取這個API
+
+而應用程式在存取API時，將透過API key驗證你有沒有被授權使用
+
+所以點選「前往API主控台查看報表」進行API key的設定
+
+<img src = "/img/map_api_access.png" / >
+
+先在主控台左邊選取「API Access」管理API的存取
+
+因為我們開發的是Android App 所以在畫面右邊點擊「Create new Android key」按鈕
+
+<img src = "/img/map_android_key.png" / >
+
+在這個Android Key的設定視窗中，它告訴我們如果要產生適用於Android App的API key
+
+我們得提供
+
+1. 開發環境的「SHA1 fingerprint」
+2. APP的「package name」
+
+所以以下我們開始分別尋找這兩樣東西
+
+###SHA1 fingerprint
+
+如剛才Android key設定視窗中所說的，可以使用keytool工具來取得SHA1 fingerprint
+
+取得的方法是使用命令提示字元工具輸入以下的指令
+
+```bash
+keytool -list -v -keystore [keystore的存放位置]
+```
+
+使用前記得先將目錄切換到存放keytool的地方，這樣才能使用keytool
+
+而keytool這樣工具通常都被存放在Java的bin資料夾中
+
+以本範例來說，keytool存放在
+
+```bash
+C:\Program Files\Java\jre7\bin
+```
+
+所以就在命令提示字元中輸入
+
+```bash
+cd C:\Program Files\Java\jre7\bin
+```
+
+至於你自己的keytool放在哪裡，就就自己去找找吧
+
+keystore的話，本範例的keystore存放在
+
+```bash
+C:\Users\PC\.android\debug.keystore
+```
+
+確認都有了keytool和keystore之後，我們就可以開始解碼，取得我們的SHA1 fingerprint
+
+在命令提示字元中依照keystore的存放位置輸入
+
+```bash
+keytool -list -v -keystore C:\Users\PC\.android\debug.keystore
+```
+
+
+
+
+
+
+
+
+
+
 
 
 卡在SHA1
