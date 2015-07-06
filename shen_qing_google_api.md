@@ -9,13 +9,18 @@
 
 先連到[Google API Console](https://code.google.com/apis/console)(Google API 主控台)
 
-會先看到這個畫面
+並新增一個專案
 
-<img src = "/img/map_start.jpg" / >
+<img src = "/img/map_start.jpg" />
+
+
+因為是示範專案，所以專案名稱就填test(你可以填入你自己喜歡的名稱)
+
+而App Engine的位置其實不管哪裡對我們的影響都不大
 
 
 
-<img src = "/img/map_api_console.png" / >
+<img src = "/img/map_enable.png" / >
 
 
 選擇「Enable Google APIs for use in your apps」
@@ -23,7 +28,7 @@
 啟動你應用程式中的Google API
 
 
-
+<img src = "/img/map_apis.png" / >
 
 
 卡在SHA1
