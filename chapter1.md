@@ -1,4 +1,4 @@
-# 使用Google Maps API來顯示地圖
+# 使用Google Maps API顯示地圖
 若你想開發的APP需要呈現與地點有關的資訊，可以使用Google Maps API來呈現。
 
 ## 呈現結果
