@@ -75,7 +75,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
     android:name="com.google.android.gms.version"
     android:value="@integer/google_play_services_version" />
 ```
-我們依照章節「申請Google API」設定後，得到的API key為
+依照章節「申請Google API」設定後，得到的API key為
 
 ```bash
 API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
