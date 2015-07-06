@@ -12,7 +12,17 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 開啟Google Maps API並獲得API key授權
 
+##範例目錄
+
+1. 主控台初步設定
+2. 取得產生API key必須資料
+  1. SHA1 fingerprint
+  2. package name
+3. 產生API key
+
 ##範例說明
+
+###主控台初步設定
 
 
 先連到[Google API Console](https://code.google.com/apis/console)(Google API 主控台)
@@ -67,7 +77,7 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 所以以下我們開始分別尋找這兩樣東西
 
-###SHA1 fingerprint
+###取得產生API key必須資料 - SHA1 fingerprint
 
 如剛才Android key設定視窗中所說的，可以使用keytool工具來取得SHA1 fingerprint
 
@@ -132,7 +142,7 @@ Window -> Preferences -> Android -> Build 也是找得到哦
 
 
 
-###package name
+###取得產生API key必須資料 - package name
 
 package name的取得就比較簡單了
 
@@ -147,7 +157,7 @@ package name的取得就比較簡單了
 <img src = "/img/map_package.png" / >
 
 
-取得授權
+###產生API key
 
 回到Android key的設定視窗，依照它的指示輸入SHA1 fingerprint和package name
 
