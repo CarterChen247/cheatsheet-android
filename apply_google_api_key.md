@@ -1,4 +1,4 @@
-#申請Google Maps API以開發地圖應用程式
+#申請並啟用Google Maps API以開發地圖應用程式
 
 很多時候如果我們開發的APP中具有和顯示地點有關的功能
 
