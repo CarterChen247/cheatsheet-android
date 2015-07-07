@@ -1,4 +1,4 @@
-# 使用Google Maps API顯示地圖
+# 在APP上顯示地圖
 想要在APP上顯示地標，必須要先從設定地圖開始
 
 本範例將示範簡單的步驟，在設定完地圖後顯示地圖
@@ -75,7 +75,7 @@ C:\Users\PC\Desktop\Android\sdk\extras\google\google_play_services
     android:name="com.google.android.gms.version"
     android:value="@integer/google_play_services_version" />
 ```
-依照章節「申請Google API」設定後，得到的API key為
+依照章節「申請並啟用Google Maps API」設定後，得到的API key為
 
 ```bash
 API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
@@ -121,4 +121,4 @@ API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
 GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 ```
 
-大功告成!可以開始Run看看App了。
+大功告成!可以開始Run看看App了。(完)
