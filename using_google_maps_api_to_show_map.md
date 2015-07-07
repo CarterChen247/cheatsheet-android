@@ -115,7 +115,7 @@ API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
     class="com.google.android.gms.maps.MapFragment" />
 ```
 
-在MainActivity.java中加入以下程式碼
+在MainActivity.java中的OnCreate生命週期加入以下程式碼
 
 ```java
 GoogleMap map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
