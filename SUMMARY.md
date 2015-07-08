@@ -6,6 +6,5 @@
 * [用Gson將資料轉換為Json格式](convert_to_json_by_using_gson.md)
 * [用Facebook SDK建立快速登入](facebook_sdk.md)
 * Amazon EC2
-* LAMP
 * RadioButton + Fragment
 
