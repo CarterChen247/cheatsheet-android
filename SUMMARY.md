@@ -5,6 +5,6 @@
 * [在APP上顯示地圖](using_google_maps_api_to_show_map.md)
 * [用Gson將資料轉換為Json格式](convert_to_json_by_using_gson.md)
 * [用Facebook SDK建立快速登入](facebook_sdk.md)
-* Amazon EC2
+* [Amazon EC2](amazon_ec2.md)
 * RadioButton + Fragment
 
