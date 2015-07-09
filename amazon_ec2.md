@@ -26,15 +26,42 @@
 
 ###啓用AWS EC2並啟動一個instance
 
-用信用卡辦完帳號之後就可以開始啟動EC2
+>圖 AWS主選單
 
-啟動過程中皆選擇預設選項即可
+在主選單中選擇EC2，並開始進行設定
 
-key-pair記得保存
+在設定過程中皆選擇預設選項即可
 
-記得把security group的權限新增port 80和port 433
+其中比較需要注意的有兩點：
 
-接著就開始啟動啦
+1. key-pair的保存
+2. Security Group的設定
+
+####key-pair的保存
+
+>圖 key-pair
+
+key-pair是之後用來產生private key的文件
+
+有了private key，我們才可以用來進行SSH安全連線
+
+一定要記得保存好，遺失或是被別人拿走網站就完蛋了XD
+
+####Security Group的設定
+
+Security Group的工作
+
+簡單來說就是門口的警衛
+
+當我們今天想要進入一個晚會(網站)
+
+他們會檢查我們胸前佩戴的名牌(port)，再決定要不要讓你進去
+
+預設的設定是只允許port 22，也就是只允許SSH連線到遠端主機(網站)
+
+這邊我們得額外設定好HTTP(80)和HTTPS(433)，這樣才能從別的地方到我們的網站存取資料
+
+>圖 Security Group
 
 ### 使用PUTTY登入遠端主機
 
