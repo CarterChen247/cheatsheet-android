@@ -63,7 +63,23 @@ Security Group的工作
 
 >圖 Security Group
 
+到這邊為止，就完成EC2 instance的啟動了
+
 ### 使用PUTTY登入遠端主機
+
+啟動了EC2之後，就等於我們多擁有了一台空的主機
+
+我們要在這台主機上安裝伺服器環境
+
+這樣之後才可以使用手機來連接伺服器的服務
+
+要登入Amazon EC2需要進行SSH登入
+
+所以以下我們以puttygen與puttyn為例
+
+產生private key並進行安全登入
+
+#### 
 
 
 使用putty來啟動
