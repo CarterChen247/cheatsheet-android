@@ -11,7 +11,7 @@
 
 在APP上顯示地圖。
 
-## 範例目錄
+## 範例流程
 
 1. 安裝並匯入Google Play services專案到工作區
 2. 為開發中的APP匯入Google Play services library
