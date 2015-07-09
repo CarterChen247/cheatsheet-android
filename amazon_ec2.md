@@ -28,6 +28,9 @@ key-pair記得保存
 
 接著就開始啟動啦
 
+### 使用PUTTY登入遠端主機
+
+
 使用putty來啟動
 
 >putty設定
@@ -38,6 +41,8 @@ key-pair記得保存
 使用pscp來傳送檔案
 
 > pscp語法
+
+###安裝LAMP環境
 
 使用ec2-user登入以後
 
@@ -130,6 +135,8 @@ http://my.public.dns.amazonaws.com/phpinfo.php
 
 > pscp
 
+### 安裝phpMyAdmin
+
 接著，參考DigitalOcean上由Justin Ellingwood分享的[在CentOS上安裝phpMyAdmin](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-a-centos-6-4-vps)
 
 ```
@@ -163,7 +170,7 @@ VPS_IP_address/phpmyadmin
 大功告成!可以開始匯入sql檔囉
 
 
-
+### 使用pscp傳送檔案
 
 
 
