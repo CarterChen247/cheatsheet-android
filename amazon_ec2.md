@@ -4,7 +4,7 @@
 架設一個行動應用程式的伺服器環境
 
 ##範例流程
-1. 申請AWS帳號
+1. 啓用AWS EC2並啟動一個Instance
 2. 使用PUTTY登入遠端主機
 3. 安裝LAMP環境
 4. 安裝phpMyAdmin
