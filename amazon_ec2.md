@@ -228,7 +228,7 @@ $ sudo chkconfig mysqld on
 
 接著，參考DigitalOcean上由Justin Ellingwood分享的[在CentOS上安裝phpMyAdmin](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-a-centos-6-4-vps)
 
-安裝phpMyAdmin
+安裝phpMyAdmin到我們AWS EC2的instance上
 ```bash
 $ sudo yum install phpmyadmin
 ```
@@ -242,13 +242,13 @@ $ sudo nano /etc/httpd/conf.d/phpMyAdmin.conf
 只允許透過這個IP使用phpMyAdmin管理資料庫
 ```bash
 . . .
-Require ip your_workstation_IP_address
+Require ip [遠端主機IP位址]
 . . .
-Allow from your_workstation_IP_address
+Allow from [遠端主機IP位址]
 . . .
-Require ip your_workstation_IP_address
+Require ip [遠端主機IP位址]
 . . .
-Allow from your_workstation_IP_address
+Allow from [遠端主機IP位址]
 . . .
 ```
 
@@ -259,7 +259,7 @@ $ sudo service httpd start
 
 打開瀏覽器，輸入phpMyAdmin的網址
 ```
-VPS_IP_address/phpmyadmin
+http:/[遠端主機網址]/phpmyadmin
 ```
 
 >圖 phpMyAdmin
@@ -283,5 +283,6 @@ pscp -i [private key檔案位址] [本機要傳送的檔案位址] [遠端主機
 ```
 如果要將整個資料夾傳送到遠端主機，加個-r即可
 
+```bash
 pscp -i -r [private key檔案位址] [本機要傳送的資料夾位址] [遠端主機要存放檔案的位址]
-
+```
