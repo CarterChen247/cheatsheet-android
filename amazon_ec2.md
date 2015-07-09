@@ -12,17 +12,25 @@
 
 ##範例說明
 
-要使用Amazon提供的EC2服務
+使用Amazon Web Service前需要先申請帳號
 
-首先你需要信用卡
+而申請帳號時需要信用卡資料
+
+所以記得先去辦一張信用卡/金融卡(如VISA、Master Card)
+
+辦帳號的過程很簡單
+
+就把該填的填一填、填完就下一步
+
+經過驗證後就可以開始使用AWS囉
+
+###啓用AWS EC2並啟動一個Instance
 
 用信用卡辦完帳號之後就可以開始啟動EC2
 
 啟動過程中皆選擇預設選項即可
 
 key-pair記得保存
-
-###啓用AWS EC2並啟動一個Instance
 
 記得把security group的權限新增port 80和port 433
 
