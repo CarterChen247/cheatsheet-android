@@ -12,7 +12,7 @@ Android中提供Google Map地圖支援，只是在使用之前要做一些小設
 
 開啟Google Maps API並獲得API key授權
 
-##範例目錄
+##範例流程
 
 1. 主控台初步設定
 2. 取得產生API key必須資料
