@@ -10,8 +10,8 @@
 4. 安裝phpMyAdmin
 5. 使用pscp傳送檔案
 
-
 ##範例說明
+
 要使用Amazon提供的EC2服務
 
 首先你需要信用卡
@@ -21,6 +21,8 @@
 啟動過程中皆選擇預設選項即可
 
 key-pair記得保存
+
+###啓用AWS EC2並啟動一個Instance
 
 記得把security group的權限新增port 80和port 433
 
