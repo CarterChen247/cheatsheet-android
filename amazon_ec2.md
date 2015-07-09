@@ -152,44 +152,37 @@ Starting httpd:                                            [  OK  ]
 $ sudo chkconfig httpd on
 ```
 
-查看Apache server啟動的設定
-```bash
-$ chkconfig --list httpd
+以下設定使用者的管理權限
 
-顯示
-httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
-```
-
-管理權限
-
-()
+建立一個名稱為「www」的群組
 ```bash
 $ sudo groupadd www
 ```
 
-()
+讓使用者可以管理「www」這個群組
 ```bash
 $ sudo usermod -a -G www ec2-user
 ```
 
-登出遠端主機，重新SSH登入
+登出遠端主機，重新SSH登入以完成設定
 ```bash
 $ exit
 ```
 
-```bash
-$ groups
-ec2-user wheel www
-```
+讓群組「www」有管理/var/www資料夾的權限
 
 ```bash
 $ sudo chown -R root:www /var/www
 ```
 
+對資料夾(directory)指定權限
+
 ```bash
 $ sudo chmod 2775 /var/www
 $ find /var/www -type d -exec sudo chmod 2775 {} +
 ```
+
+對檔案(file)指定權限
 
 ```bash
 $ find /var/www -type f -exec sudo chmod 0664 {} +
