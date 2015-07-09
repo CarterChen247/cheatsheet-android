@@ -79,49 +79,78 @@ Security Group的工作
 
 產生private key並進行安全登入
 
-#### 
+####使用puttygen產生private key
 
+請拿出我們剛剛下載好的key-pair
 
-使用putty來啟動
+並載入到puttygen中，進行產生private key的動作
 
->putty設定
+>圖 puttygen
 
->putty key-pair
+密碼不需要設定
 
+puttygen下載
 
-使用pscp來傳送檔案
+#### 使用putty進行安全登入
 
-> pscp語法
+有了private key之後，我們便可以來進行安全登入
+
+打開putty
+
+>圖 putty介面
+
+選擇左側的Auth，選擇()，載入private key
+
+>圖 auth
+
+回到()，填入遠端主機的資訊
+
+>圖 putty設定
+
+主機位址如果不清楚的話可以進去AWS EC2的主控台中
+
+>圖 EC2 
+
+看要用Public DNS address或Public IP address當主機位址都可以
+
+最後按open，便可連進我們的遠端主機
+
+>圖 remote-terminal
 
 ###安裝LAMP環境
 
-使用ec2-user登入以後
+成功登入以後，就可以來安裝伺服器環境囉
 
-就可以來安裝LAMP + MyphpAdmin了
+本範例以LAMP(Linux + Apache + MySQL + PHP)為例，進行伺服器的架設
 
-以下轉載自Amazon的[安裝LAMP教學](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html)
+架設的方法在Amazon上其實就有[詳細的英文說明文件](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html)
+
+而為了方便大家了解，由本範例翻譯成中文：
+
 
 ```bahs
-[ec2-user ~]$ sudo yum update -y
+$ sudo yum update -y
 ```
 
 ```bash
-[ec2-user ~]$ sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd
+$ sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd
 ```
 
 ```bash
-[ec2-user ~]$ sudo service httpd start
+$ sudo service httpd start
 
 顯示
 Starting httpd:                                            [  OK  ]
 ```
 
 ```bash
-[ec2-user ~]$ sudo chkconfig httpd on
+$ sudo chkconfig httpd on
 ```
 
 ```bash
-[ec2-user ~]$ chkconfig --list httpd
+$ chkconfig --list httpd
+
+顯示
 httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
 ```
 
@@ -131,56 +160,56 @@ httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
 管理權限
 
 ```bash
-[ec2-user ~]$ sudo groupadd www
+$ sudo groupadd www
 ```
 
 ```bash
-[ec2-user ~]$ sudo usermod -a -G www ec2-user
+$ sudo usermod -a -G www ec2-user
 ```
 
 ```bash
-[ec2-user ~]$ exit
+$ exit
 ```
 
 ```bash
-[ec2-user ~]$ groups
+$ groups
 ec2-user wheel www
 ```
 
 ```bash
-[ec2-user ~]$ sudo chown -R root:www /var/www
+$ sudo chown -R root:www /var/www
 ```
 
 ```bash
-[ec2-user ~]$ sudo chmod 2775 /var/www
-[ec2-user ~]$ find /var/www -type d -exec sudo chmod 2775 {} +
+$ sudo chmod 2775 /var/www
+$ find /var/www -type d -exec sudo chmod 2775 {} +
 ```
 
 ```bash
-[ec2-user ~]$ find /var/www -type f -exec sudo chmod 0664 {} +
+$ find /var/www -type f -exec sudo chmod 0664 {} +
 ```
 
 ```bash
-[ec2-user ~]$ echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
+$ echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 ```
 ```bash
 http://my.public.dns.amazonaws.com/phpinfo.php
 ```
 
 ```bash
-[ec2-user ~]$ sudo service mysqld start
+$ sudo service mysqld start
 ```
 
 ```bash
-[ec2-user ~]$ sudo mysql_secure_installation
+$ sudo mysql_secure_installation
 ```
 
 ```bash
-[ec2-user ~]$ sudo service mysqld stop
+$ sudo service mysqld stop
 ```
 
 ```bash
-[ec2-user ~]$ sudo chkconfig mysqld on
+$ sudo chkconfig mysqld on
 ```
 
 
