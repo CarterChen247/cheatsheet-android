@@ -129,15 +129,17 @@ puttygen下載
 
 而為了方便大家了解，由本範例翻譯成中文：
 
-
+套件安裝工具yum檔案清單更新
 ```bahs
 $ sudo yum update -y
 ```
 
+安裝Apache(httpd24)、PHP(php56)、(mysql55-server)、(php56-mysqlnd)
 ```bash
 $ sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd
 ```
 
+啟動Apache server
 ```bash
 $ sudo service httpd start
 
@@ -145,10 +147,12 @@ $ sudo service httpd start
 Starting httpd:                                            [  OK  ]
 ```
 
+設定Apache server在開機時自動啟動
 ```bash
 $ sudo chkconfig httpd on
 ```
 
+查看Apache server啟動的設定
 ```bash
 $ chkconfig --list httpd
 
@@ -156,19 +160,19 @@ $ chkconfig --list httpd
 httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
 ```
 
-測試
-
-
 管理權限
 
+()
 ```bash
 $ sudo groupadd www
 ```
 
+()
 ```bash
 $ sudo usermod -a -G www ec2-user
 ```
 
+登出遠端主機，重新SSH登入
 ```bash
 $ exit
 ```
@@ -191,16 +195,25 @@ $ find /var/www -type d -exec sudo chmod 2775 {} +
 $ find /var/www -type f -exec sudo chmod 0664 {} +
 ```
 
+虛擬主機伺服器目錄在/var/www/html，建立一個php檔案進行測試
 ```bash
 $ echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 ```
+
+打開瀏覽器，輸入php檔案的網址
 ```bash
 http://my.public.dns.amazonaws.com/phpinfo.php
 ```
 
+>圖 phpinfo頁面
+
+啟動MySQL server
+
 ```bash
 $ sudo service mysqld start
 ```
+
+進行安全設定
 
 ```bash
 $ sudo mysql_secure_installation
@@ -210,6 +223,7 @@ $ sudo mysql_secure_installation
 $ sudo service mysqld stop
 ```
 
+設定遠端主機開機時自動啟動MySQL server
 ```bash
 $ sudo chkconfig mysqld on
 ```
