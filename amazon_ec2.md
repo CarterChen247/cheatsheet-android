@@ -175,14 +175,14 @@ $ exit
 $ sudo chown -R root:www /var/www
 ```
 
-對資料夾(directory)指定權限
+接著對此資料夾中的資料夾(directory)指定權限
 
 ```bash
 $ sudo chmod 2775 /var/www
 $ find /var/www -type d -exec sudo chmod 2775 {} +
 ```
 
-對檔案(file)指定權限
+對此資料夾中的檔案(file)指定權限
 
 ```bash
 $ find /var/www -type f -exec sudo chmod 0664 {} +
