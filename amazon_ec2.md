@@ -24,7 +24,7 @@
 
 經過驗證後就可以開始使用AWS囉
 
-###啓用AWS EC2並啟動一個Instance
+###啓用AWS EC2並啟動一個instance
 
 用信用卡辦完帳號之後就可以開始啟動EC2
 
