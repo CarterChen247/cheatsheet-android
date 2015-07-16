@@ -59,7 +59,7 @@ key-pair可以用來產生private key
 
 2. 在任一Security Group上點右鍵選擇「Edit inbound rules」，或新增一個
 
-><img src = "/img/aws_securitygroup.PNG" / >
+><img src = "img/aws_securitygroup.PNG" / >
 
 
 Security Group的工作
