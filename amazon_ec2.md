@@ -1,6 +1,6 @@
 # Amazon EC2
 Amazon Web Service(簡稱AWS)現在已經有繁體中文版囉！
-![](img/aws_index.png)
+><img src = "/img/aws_index.PNG" / >
 
 ## 範例目標
 架設一個行動應用程式的伺服器環境
@@ -28,7 +28,7 @@ Amazon Web Service(簡稱AWS)現在已經有繁體中文版囉！
 
 ###啓用AWS EC2並啟動一個instance
 
->圖 AWS主選單
+><img src = "/img/aws_console.png" / >
 
 在主選單中選擇EC2，並開始進行設定
 
