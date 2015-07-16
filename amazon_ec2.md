@@ -1,4 +1,6 @@
 # Amazon EC2
+Amazon Web Service(簡稱AWS)現在已經有繁體中文版囉！
+![](img/aws_index.png)
 
 ## 範例目標
 架設一個行動應用程式的伺服器環境
