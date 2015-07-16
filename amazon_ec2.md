@@ -36,22 +36,31 @@ Amazon Web Service(簡稱AWS)現在已經有繁體中文版囉！
 
 在設定過程中皆選擇預設選項即可
 
-其中比較需要注意的有兩點：
+接著比較需要注意的有兩點：
 
 1. key-pair的保存
 2. Security Group的設定
 
 ####key-pair的保存
 
->圖 key-pair
+在設定過程中會自動下載成一個*.pem的key-pair文件
 
-key-pair是之後用來產生private key的文件
+key-pair可以用來產生private key
 
 有了private key，我們才可以用來進行SSH安全連線
 
 一定要記得保存好，遺失或是被別人拿走網站就完蛋了XD
 
 ####Security Group的設定
+
+1. 點選Security Groups
+
+><img src = "/img/aws_resource.png" / >
+
+2. 在任一Security Group上點右鍵選擇「Edit inbound rules」，或新增一個
+
+><img src = "/img/aws_securitygroup.PNG" / >
+
 
 Security Group的工作
 
