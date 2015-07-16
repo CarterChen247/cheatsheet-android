@@ -87,9 +87,10 @@ Security Group的工作
 
 要登入Amazon EC2需要進行SSH登入
 
-所以以下我們以puttygen與puttyn為例
+所以以下我們以puttygen與putty為例([至官方網頁下載](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html))
 
 產生private key並進行安全登入
+
 
 ####使用puttygen產生private key
 
