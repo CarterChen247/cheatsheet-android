@@ -53,14 +53,13 @@ key-pair可以用來產生private key
 
 ####Security Group的設定
 
-1. 點選Security Groups
+* 點選Security Groups
 
 ><img src = "/img/aws_resource.png" / >
 
-2. 在任一Security Group上點右鍵選擇「Edit inbound rules」，或新增一個
+* 在任一Security Group上點右鍵選擇「Edit inbound rules」，或新增一個
 
 ><img src = "img/aws_securitygroup.PNG" / >
-
 
 Security Group的工作
 
@@ -72,9 +71,9 @@ Security Group的工作
 
 預設的設定是只允許port 22，也就是只允許SSH連線到遠端主機(網站)
 
-這邊我們得額外設定好HTTP(80)和HTTPS(433)，這樣才能從別的地方到我們的網站存取資料
+這邊我們得額外設定好HTTP(80)和HTTPS(433)，這樣才能從別的地方到我們的網站存取資料，如下圖
 
->圖 Security Group
+><img src = "img/aws_securitygroup_setting.PNG" / >
 
 到這邊為止，就完成EC2 instance的啟動了
 
