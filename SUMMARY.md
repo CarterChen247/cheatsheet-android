@@ -8,4 +8,5 @@
 * 用Facebook SDK建立快速登入
 * RadioButton + Fragment
 * ViewPager
+* UploadImage
 
