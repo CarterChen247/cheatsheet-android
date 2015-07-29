@@ -7,4 +7,5 @@
 * 用Gson將資料轉換為Json格式
 * 用Facebook SDK建立快速登入
 * RadioButton + Fragment
+* ViewPager
 
