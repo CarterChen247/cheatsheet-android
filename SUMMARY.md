@@ -10,4 +10,5 @@
 * ViewPager
 * UploadImage
 * SwipeRefreshLayout
+* SnackBar
 
