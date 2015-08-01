@@ -107,7 +107,7 @@ API key: "AIzaSyAfPk081F7VsmuvQtEp4r6_S7nGs34Uylk"
     
 在activity_main.xml中加入MapFragment，用來呈現地圖
 
-```
+```xml
 <fragment
     android:id="@+id/map"
     android:layout_width="match_parent"
