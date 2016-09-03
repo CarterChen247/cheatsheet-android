@@ -1,5 +1,8 @@
 #Android Cheat Sheet(Android API 偷吃步)
-===
+
+---
+
+
 
 **僅獻給我盲目、熱情、為了開發而逝去的青春──[KazafChen](https://github.com/KazafChen)**
 
