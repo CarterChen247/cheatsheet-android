@@ -1,6 +1,6 @@
 # Summary
 
-* 作者序
+* [作者序](zuo_zhe_xu.md)
 * [Introduction](README.md)
 * [Amazon EC2](amazon_ec2.md)
 * [申請並啟用Google Maps API](apply_google_api_key.md)
