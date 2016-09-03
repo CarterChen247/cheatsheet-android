@@ -4,7 +4,7 @@
 
 **「僅獻給我盲目、熱情、為了開發而逝去的青春。」──[KazafChen](https://github.com/KazafChen)**
 
-根據我開發Mealionaire的經驗，以快速建構一個可上架的的APP為目標
+根據我開發Mealionaire([論文](http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&s=id=%22103NCUE5396039%22.&searchmode=basic)、[投影片](http://www.slideshare.net/kazafchen/mealionaire-a-contextaware-and-ontologybased-mobile-recommender-system-for-personalized-cuisine-recommendation))的經驗，以快速建構一個可上架的的APP為目標
 提供大家簡潔易懂可以快速上手的Android API使用方法，以及其他相關的函式庫、服務等應用說明
 
 
