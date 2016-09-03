@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Amazon EC2](amazon_ec2.md)
 * 作者序
+* [Amazon EC2](amazon_ec2.md)
 * [申請並啟用Google Maps API](apply_google_api_key.md)
 * [在APP上顯示地圖](using_google_maps_api_to_show_map.md)
 * [Version Control using Git](version_control_using_git.md)
