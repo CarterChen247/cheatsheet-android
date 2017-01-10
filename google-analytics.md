@@ -1,5 +1,7 @@
 #Google Analytics SDK Fundamental
 
+**Reference** https://developers.google.com/analytics/devguides/collection/android/v4/
+
 
 
 ###add permissions to Manifest.xml 

@@ -1,5 +1,6 @@
 #Firebase Analytics SDK Fundamental
 
+**Reference** https://firebase.google.com/docs/analytics/android/start/
 
 ###Prerequisites
 
