@@ -14,4 +14,6 @@
 * [在地圖上畫圈圈](zai_di_tu_shang_hua_quan_quan.md)
 * 分析系列
     * [Google Analytics](google-analytics.md)
+    * [Firebase Analytics](firebase-analytics.md)
+    * Facebook Analytics
 
