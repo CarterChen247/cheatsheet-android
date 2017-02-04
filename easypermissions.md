@@ -1,3 +1,12 @@
+#EasyPermissions
+
+Even thought this tool had make the task more easier, but you still have to figure out the correct situation to run your code:
+
+* when all permissions granted
+* when not all permissions granted, click events on the dialog invoked from method `EasyPermissions.requestPermissions`
+* when not all permissions granted, click events on `AppSettingsDialog`
+
+
 ### PREREQUISITE
 setup gradle
 ```java
@@ -16,7 +25,7 @@ comple 'pub.devrel:easypermissions:0.3.0'
             EasyPermissions.requestPermissions(this, getString(R.string.perm_more), 1, perms);
         } else {
 
-
+            // your code on UiThread
         }
 ```
 
@@ -46,6 +55,11 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 ```java
     @Override
     public void onPermissionsGranted(int requestCode, List<String> perms) {
+        // this method will be invoked when user click the positive button on EasyPermissions dialog, 
+        // make sure to continue your task only when your get all the permissions that you wanted
+        if (EasyPermissions.hasPermissions(this, this.perms)){
+            // your code on UiThread
+        }
     }
 
     @Override
@@ -63,8 +77,14 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE) {
-            // when user click negative button on the dialog we just warned, shutdown the app without any hesitation and mercy.
-            finish();
+            
+            if (!EasyPermissions.hasPermissions(this, perms)){
+                // when user click negative button on the dialog we just warned, shutdown the app without any hesitation and mercy.
+                finish();
+            }else{
+                // your code on UiThread
+            }
+
         }
     }
 

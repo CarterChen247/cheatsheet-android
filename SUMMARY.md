@@ -22,6 +22,6 @@
 * Activity
   * [android:launchMode](androidlaunchmode.md)
 * [add jar to android studio](add-jar-to-android-studio.md)
-* third-party libraries
+* [third-party libraries](third-party-libraries.md)
   * [EasyPermissions](easypermissions.md)
 
