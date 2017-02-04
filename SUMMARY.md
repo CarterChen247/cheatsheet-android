@@ -13,13 +13,15 @@
 * SnackBar
 * [在地圖上畫圈圈](zai_di_tu_shang_hua_quan_quan.md)
 * [分析系列](分析系列.md)
-    * [Google Analytics](google-analytics.md)
-    * [Firebase Analytics](firebase-analytics.md)
-    * [Facebook Analytics](facebook-analytics.md)
+  * [Google Analytics](google-analytics.md)
+  * [Firebase Analytics](firebase-analytics.md)
+  * [Facebook Analytics](facebook-analytics.md)
 * [推播系列](推播系列.md)
-    * [PopupNotificationActivity](popupnotificationactivity.md)
-    * [Notification](notification.md)
+  * [PopupNotificationActivity](popupnotificationactivity.md)
+  * [Notification](notification.md)
 * Activity
-    * [android:launchMode](androidlaunchmode.md)
+  * [android:launchMode](androidlaunchmode.md)
 * [add jar to android studio](add-jar-to-android-studio.md)
+* third-party libraries
+  * [EasyPermissions](easypermissions.md)
 
