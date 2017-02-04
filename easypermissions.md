@@ -1,3 +1,8 @@
+### PREREQUISITE
+setup gradle
+```java
+comple 'pub.devrel:easypermissions:0.3.0'
+```
 ### Add to lifecycle onCreate or onResume of your View \(in MVP, Activity or Fragment\) 
 
 ```java
@@ -58,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE) {
-            // when user click negative button on the dialog we just warned, shutdown the app without hesitation and mercy.
+            // when user click negative button on the dialog we just warned, shutdown the app without any hesitation and mercy.
             finish();
         }
     }
